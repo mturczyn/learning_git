@@ -16,6 +16,10 @@ namespace UserManagement {
 			return interest.getName() == "beer";
 		}
 		
+		public String sayHello() {
+			return "Hello my friends!";
+		}
+		
 		@Override
 		public String toString() {
 			return "My name is " + firstName + " and my age is " + age;
