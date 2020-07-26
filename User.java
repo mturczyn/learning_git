@@ -11,5 +11,9 @@ namespace UserManagement {
 		public int getAge() {
 			return age;
 		}
+		
+		public Boolean isInterestedIn(Interest interest) {
+			return interest.getName() == "beer";
+		}
 	}
 }
