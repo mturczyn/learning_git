@@ -11,5 +11,9 @@ namespace UserManagement {
 		public void createEverything() {
 			// create everything
 		}
+		
+		public void screwEverythingUp() {
+			throw Exception("Whoa, you can not do that!");
+		}
 	}
 }
