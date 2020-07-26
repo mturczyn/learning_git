@@ -20,6 +20,10 @@ namespace UserManagement {
 			return "Hello my friends!";
 		}
 		
+		public String think() {
+			throw new Exception("Users don't think");
+		}
+		
 		@Override
 		public String toString() {
 			return "My name is " + firstName + " and my age is " + age;
