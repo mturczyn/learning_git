@@ -7,5 +7,10 @@ namespace UserManagement {
 			this.description = description;
 			this.name = name;
 		}
+		
+		@Override
+		public String toString() {
+			return name + ": " + description;
+		}
 	}
 }
