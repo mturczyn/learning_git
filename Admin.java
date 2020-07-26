@@ -3,5 +3,9 @@ namespace UserManagement {
 		public void doAdminStuf() {
 			// do admin stuff...
 		}
+		
+		public void deleteEveything() {
+			// delete every file and whole system...
+		}
 	}
 }
