@@ -7,5 +7,9 @@ namespace UserManagement {
 			this.age = age;
 			this.firstName = firstName;
 		}
+		
+		public int getAge() {
+			return age;
+		}
 	}
 }
