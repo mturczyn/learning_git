@@ -7,5 +7,9 @@ namespace UserManagement {
 		public void deleteEveything() {
 			// delete every file and whole system...
 		}
+		
+		public void createEverything() {
+			// create everything
+		}
 	}
 }
