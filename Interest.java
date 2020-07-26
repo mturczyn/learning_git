@@ -10,7 +10,7 @@ namespace UserManagement {
 		
 		@Override
 		public String toString() {
-			return name + ": " + description;
+			return "Interest is " + name + ": " + description;
 		}
 	}
 }
