@@ -1,5 +1,14 @@
 # branches_tests
 
+Początkowo miało być to repozytorium do nauki pracy z branchami na gicie, jednak w miarę pracy, przerodziło się w szerzej pojętą naukę GITa. Poniżej zbiór notatek z tego kursu.
+
+Pliki z tego repozytorium są wyłącznie w celach testowych, nie stanowią żadnego projektu, ani aplikacji.
+
+Źródła:
+- [książka na stronie GIT](https://git-scm.com/book/en/v2/Getting-Started-Getting-Help)
+
+## Nauka branchy
+
 Użyte komendy GIT w celu:
 - stworzenia lokalnego repo
 - podłączenia lokalnego repo pod repo zdalne (remote)
@@ -54,11 +63,23 @@ Inicjalizuje repozytorium git (tworzy ukryty folder .git z konfiguracją i inne 
 ```
 git init
 ```
-
-## git stash
-
+```
+git stash
+```
 Uzywany do odkładania zmian, bez dodawaania ich do indeksu. Czyli, mam pracę w trakcie (work in progress), nie chcę jeszcze jej dodawać do indeksu, ale muszę szybko przełączyć się na innego brancha, wówczas stashuje sobie zmiany, a obecny stan repo cofa mi się do tego, który jest na lokalnym repo. Wtedy mam czyste repo i mogę np. spokojnie sie przełączyć miedzy branchami.
-
-## git commit --amend
-
+```
+git commit --amend
+```
 Nadpisuje ostatni komit - użyteczne jeśli chcemy zmienić komentarz do komita. Uwaga: nie dotyczy komitów, które już poszły na zdalne repo.
+
+## [Książka GIT](https://git-scm.com/book/en/v2/Getting-Started-Getting-Help) - notatki
+
+```
+git add -h
+```
+W ten sposób wyświetlamy zwięzły opis danej metody (tu: `git add`). Alternatywą jest `git help add` lub `git add --help`, co wyświetla pełną pomoc.
+```
+git config -l --show-origin
+```
+Wyświetla wszystkie ustawienia gita oraz w jakich plikach jest dane ustawienie zdefiniowane.
+
