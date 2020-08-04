@@ -88,7 +88,7 @@ Wyświetla wszystkie ustawienia gita oraz w jakich plikach jest dane ustawienie 
 Polecenie `git log` pozwala na przeglądanie historii komitów. Posiada ona wiele opcji, takich jak:
 ```
 --patch -p #pozwala na wyświetlanie zmian dokonancyh w danym pliku w danym komicie
---pretty=[oneline|full|Fuller|format:"..."] #zmiana sposobu wyświetlania komitów, format dodatkowo posiada swoje opcje, jest on najbardziej elastyczny
+--pretty=[oneline|full|fuller|format:"..."] #zmiana sposobu wyświetlania komitów, format dodatkowo posiada swoje opcje, jest on najbardziej elastyczny
 --graph #wyświetla graf, który wizualizuje branche i komity na nich robione.
 ```
 Poniższe opcje pozwalają ograniczyć historię.
