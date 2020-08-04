@@ -81,5 +81,24 @@ W ten sposób wyświetlamy zwięzły opis danej metody (tu: `git add`). Alternat
 ```
 git config -l --show-origin
 ```
-Wyświetla wszystkie ustawienia gita oraz w jakich plikach jest dane ustawienie zdefiniowane.
+Wyświetla wszystkie ustawienia gita oraz w jakich plikach jest dane ustawienie zdefiniowane
 
+### Historia komitów
+
+Polecenie `git log` pozwala na przeglądanie historii komitów. Posiada ona wiele opcji, takich jak:
+```
+--patch -p #pozwala na wyświetlanie zmian dokonancyh w danym pliku w danym komicie
+--pretty=[oneline|full|Fuller|format:"..."] #zmiana sposobu wyświetlania komitów, format dodatkowo posiada swoje opcje, jest on najbardziej elastyczny
+--graph #wyświetla graf, który wizualizuje branche i komity na nich robione.
+```
+Poniższe opcje pozwalają ograniczyć historię.
+```
+--since --after  # komity po dacie, np.: --since="2018-05-05"
+--until --before # komity przed datą
+-<n>  # ilość komitów wstecz, np. -6
+--grep # pozwala zdefiniować jaki podciąg ma zawierać komentarz komita
+-S  # tekst, który ma zawierać zmieniony plik (tylko tekst, który został zmieniony, tzn. dodany/usunięty)
+--committer # komitujący
+--author #auto zmian komitowanych (może być różny od komitującego)
+--no-merges  # pomija komity, które zawierały merge
+```
