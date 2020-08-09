@@ -9,6 +9,16 @@ Pliki z tego repozytorium są wyłącznie w celach testowych, nie stanowią żad
 
 ## Nauka branchy
 
+`git checkout` - przełącza na dany branch. Natomiast przełączanie na branch jest to przełączenie wskaźnika HEAD na ostatni commit, tzn. HEAD wskazuje na komit z danego brancha. Np.: jeśli mamy komity:
+```
+           master
+		     ↓
+c1 <- c2 <- c3 <- c4
+                   ↑
+				 branch
+```
+to przełączając się na brancha `branch` wskaźnik HEAD wskazuje na komit `c4`.
+
 Użyte komendy GIT w celu:
 - stworzenia lokalnego repo
 - podłączenia lokalnego repo pod repo zdalne (remote)
@@ -102,3 +112,37 @@ Poniższe opcje pozwalają ograniczyć historię.
 --author #auto zmian komitowanych (może być różny od komitującego)
 --no-merges  # pomija komity, które zawierały merge
 ```
+
+### Cofanie zmian
+
+`git commit --amend` nadpisuje ostatni komit.
+
+`git reset` - wycofuje zmiany z indeksu (staged), ale pliki pozostają zmienione lokalnie, ale nie w indeksie
+
+`git checkout` - cofa zmiany zroibione lokalnie, tzn. nie wrzucone jeszcze do indeksu
+
+### Zdalne serwery
+
+Domyślnie, GIT tworzy jedno zdalne repo pod nazwą `origin` dla serwera, z którego sklonowaliśmy repozytorium. Opcja `remote` pozwala pracować ze zdalnymi serwerami:
+
+`git remote` wyświetla nazwy wszystkich serwerów
+
+`git remote -v` - dodatkowo wyśiwetla jeszcze URL do fetcha i pusha
+
+`git remote add <name> <url>` - dodaje nowy serwer zdalnego repozytorium
+
+`git remote show <name>` - wyświetla stan zdalnego repo (np. branche zdalne)
+
+Inne:
+```
+git remote rename <name> <newname>
+git remote remove <name>
+```
+
+### Gałęzie
+
+`HEAD` jest wskaźnikiem gałęzi, na której obecnie się anjdujemy.
+
+`git log --all` wyświetla historię ze wszystkich branchy.
+
+`git log <branchname>` pokazuje historię danej gałęzi.
