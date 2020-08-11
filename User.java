@@ -28,8 +28,12 @@ namespace UserManagement {
 			throw new Exception("Users don't think");
 		}
 		
-		public bool doSomeWork() {
+		public Boolean doSomeWork() {
 			return false;
+		}
+		
+		public Boolean beLazy() {
+			return true;
 		}
 	}
 }
