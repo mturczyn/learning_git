@@ -3,6 +3,7 @@ namespace UserManagement {
 		private String firstName;
 		private Integer age;
 		
+		// Special constructor for a class. Use at your own risk.
 		public User(String firstName, Integer age) {
 			this.age = age;
 			this.firstName = firstName;
