@@ -27,5 +27,9 @@ namespace UserManagement {
 		public String thinkOutOfTheBox() {
 			throw new Exception("Users don't think");
 		}
+		
+		public bool doSomeWork() {
+			return false;
+		}
 	}
 }
