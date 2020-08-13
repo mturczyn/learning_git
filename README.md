@@ -146,3 +146,15 @@ git remote remove <name>
 `git log --all` wyświetla historię ze wszystkich branchy.
 
 `git log <branchname>` pokazuje historię danej gałęzi.
+
+### Ustawianie zdalnych serwerów
+
+Aby założyć zdalne repozytorium, wpierw należy mieć działające lokalne repozytorium. Na przykład `C:\git_repo`, wówczas, aby założyć repozytorium zdalne wystarczy wykonać polecenie
+```
+git clone --bare C:\git_repo C:\some_safe_directory\my_remote_repo
+```
+Od tego momentu lokalizację możemy ustawiać `C:\some_safe_directory\my_remote_repo` jako `remote` dla naszych lokalnych repozytoriów. Jeśli chcemy dane repo zdalne wynieść gdzieś na serwer, aby więcej osób mogło na nim pracować, przenosimy skopiowane zdalne repo na serwer i tam wykonujemy komendę (w utworzonej lokalizacji):
+```
+git init --bare
+```
+Dodatkowo należy ustalić protokół, po którym odbywać się będzie komunikacja z gitem. GIT obsługuje `SSH`, `https` oraz ma własny protokół `git`.
