@@ -14,11 +14,10 @@ namespace UserManagement {
 			return name;
 		}
 		
-		
-		
 		@Override
 		public String toString() {
-			return "Interest is " + name + ": " + description;
+			String s = "Interest is " + name + ": " + description;
+			return s;
 		}
 	}
 }
