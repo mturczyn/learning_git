@@ -36,6 +36,6 @@ namespace UserManagement {
 		public Boolean beLazy() {
 			return true;
 		}
-		// comment: branch comments
+		// comment: master comment
 	}
 }
