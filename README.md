@@ -147,6 +147,22 @@ git remote remove <name>
 
 `git log <branchname>` pokazuje historię danej gałęzi.
 
+## `git rebase`
+
+Polecenie `rebase` pozwala nam na zachowanie komitów na aktualnym branchu na górze przy mergowaniu, tzn. jesli mamy sytuajcę, gdzie historie branchy się rozjądą:
+```
+           branch
+            ↓
+       C4 - C5
+      /
+C1 - C2 - C3
+           ↑
+          master
+```
+to mergując mastera, to historia będzie taka, że wpierw będą nasze komity, mastera, a następnie komit mergowy (czyli komit zmergowanych plików). Polecenie `rebase` sprawia, że ta historia jest inna: wpierw są komity z mastera, a następnie z brancha.
+
+Jeśli przy mergowaniu z rebasem wystąpią konflikty, to po ich rozwiązaniu należy wykonać polecneie `git rebase --continue` lub `git rebase --abort`. Jednak możemy o tym zapomnieć, wówczas `git status` wyświetla nam obecny status brancha, razem informacją na temat jakiegokolwiek procesu rebase.
+
 ### Ustawianie zdalnych serwerów
 
 Aby założyć zdalne repozytorium, wpierw należy mieć działające lokalne repozytorium. Na przykład `C:\git_repo`, wówczas, aby założyć repozytorium zdalne wystarczy wykonać polecenie
