@@ -9,6 +9,7 @@ namespace UserManagement {
 			this.firstName = firstName;
 		}
 		
+		// Comment on method (branchC)
 		public int getAge() {
 			return age;
 		}
