@@ -21,6 +21,7 @@ namespace UserManagement {
 			return "Hello my friends!";
 		}
 		
+		// Comment on method (branchB)
 		public String think() {
 			throw new Exception("Users don't think");
 		}
