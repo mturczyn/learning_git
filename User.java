@@ -37,7 +37,7 @@ namespace UserManagement {
 			return false;
 		}
 		
-		// Comment on method
+		// Commented on method: learning GIT
 		public Boolean beLazy() {
 			return true;
 		}
