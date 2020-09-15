@@ -13,7 +13,7 @@ namespace UserManagement {
 		public String getName() {
 			return name;
 		}
-		// some code
+		
 		@Override
 		public String toString() {
 			String s = "Interest is " + name + ": " + description;
