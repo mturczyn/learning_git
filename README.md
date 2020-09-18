@@ -79,6 +79,14 @@ git stash
 Uzywany do odkładania zmian, bez dodawania ich do indeksu. Czyli, mam pracę w trakcie (work in progress), nie chcę jeszcze jej dodawać do indeksu, ale muszę szybko przełączyć się na innego brancha, wówczas stashuje sobie zmiany, a obecny stan repo cofa mi się do tego, który jest na lokalnym repo. Wtedy mam czyste repo i mogę np. spokojnie sie przełączyć miedzy branchami.
 
 Dodatkowo posiada argument `--index`, który przywraca odłożone zmiany, ale z indeksu (staged).
+
+Można również odłożoną pracę odtworzyć jako nowy branch zamiast przywracać ją na akuralnym branchu za pomocą komnedy `git stash branch <brnch_name>`
+
+```
+git clean
+```
+Oczyszcza repozytorium z nieśledzonych (untracked) plików.
+
 ```
 git commit --amend
 ```

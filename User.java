@@ -9,7 +9,7 @@ namespace UserManagement {
 			this.firstName = firstName;
 		}
 		
-		// Comment on method (branchC)
+		// Comment on method.
 		public int getAge() {
 			return age;
 		}
@@ -22,7 +22,7 @@ namespace UserManagement {
 			return "Hello my friends!";
 		}
 		
-		// Comment on method (branchB)
+		// Comment on method.
 		public String think() {
 			throw new Exception("Users don't think");
 		}
@@ -37,7 +37,7 @@ namespace UserManagement {
 			return false;
 		}
 		
-		// Commented on method: learning GIT
+		// Comment on method.
 		public Boolean beLazy() {
 			return true;
 		}
