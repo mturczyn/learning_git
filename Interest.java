@@ -10,6 +10,7 @@ namespace UserManagement {
 			this.user = user;
 		}
 		
+		// Gets name...
 		public String getName() {
 			return name;
 		}
