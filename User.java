@@ -37,7 +37,7 @@ namespace UserManagement {
 			return false;
 		}
 		
-		// Comment on method.
+		// Comment on method. Some more comment: blah blah blah.
 		public Boolean beLazy() {
 			return true;
 		}
