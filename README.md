@@ -122,7 +122,11 @@ Poniższe opcje pozwalają ograniczyć historię.
 --author #auto zmian komitowanych (może być różny od komitującego)
 --no-merges  # pomija komity, które zawierały merge
 ```
-
+Jeśli szukamy zmian, które zawierały określony ciąg znaków, funckja `log` ma argument `-S`, przez który przekazujemy szukany ciąg znaków, np.:
+```
+git log -S searchterm
+```
+Kolejnym argumentem jest `-L`, który pozwala na wyświetlanie historii konkretnych linii we wskazanym pliku.
 ### Cofanie zmian
 
 `git commit --amend` nadpisuje ostatni komit.
@@ -184,3 +188,15 @@ Od tego momentu lokalizację możemy ustawiać `C:\some_safe_directory\my_remote
 git init --bare
 ```
 Dodatkowo należy ustalić protokół, po którym odbywać się będzie komunikacja z gitem. GIT obsługuje `SSH`, `https` oraz ma własny protokół `git`.
+
+### Przeszukiwanie aktualnej lokalizacji
+
+Normalnie taką funkcjonalność zapewniają cmdlety PSa, tzn.:
+```
+dir -Recurse | Select-String -Pattern 'pattern'
+```
+jednak `git` proponuje prostszą składnię:
+```
+git grep
+```
+która działa podobnie (dokładnie jak `grep` w bashu). Użyteczne argumenty `git grep` to na przykład `--count` (ilość wystąpień w pliku) lub `-n` (numer linii).
