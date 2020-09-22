@@ -200,3 +200,10 @@ jednak `git` proponuje prostszą składnię:
 git grep
 ```
 która działa podobnie (dokładnie jak `grep` w bashu). Użyteczne argumenty `git grep` to na przykład `--count` (ilość wystąpień w pliku) lub `-n` (numer linii).
+
+### `git reset`
+
+Można wykonać to polecenie z trzema argumentai:
+- `--hard` - usuwa zmiany: komit, usuwa z indeksu oraz resetuje lokalizację (working directory)
+- `--mixed` - domyslny, usuwa komit i usuwa zmiany z indeksu
+- `--soft` - usuwa komit, ale zostawia zmiany w indeksie
