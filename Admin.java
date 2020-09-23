@@ -8,6 +8,7 @@ namespace UserManagement {
 			// delete every file and whole system...
 		}
 		
+		// Method used to make every thing.
 		public void createEverything() {
 			// create everything
 		}
