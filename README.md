@@ -207,3 +207,29 @@ Można wykonać to polecenie z trzema argumentai:
 - `--hard` - usuwa zmiany: komit, usuwa z indeksu oraz resetuje lokalizację (working directory)
 - `--mixed` - domyslny, usuwa komit i usuwa zmiany z indeksu
 - `--soft` - usuwa komit, ale zostawia zmiany w indeksie
+
+# GIT submodules
+
+Czasami zdarza się potrzeba, aby założyć projekt GIT i zawrzeć w nim podprojekt, który również jest hostowany przez GITa. Wówczas, kopiując projekt do nadrzednego projektu możemy mieć problem z uzywaniem GITa i zarządzaniem tymi projektami. Ten problem rozwiązują submoduły gita.
+
+Będąc w projekcie śledzonym przez gita, wystarczy wywołać:
+```
+git submodule add <URL to repo>
+```
+To działa podobnie jak `git clone` tylko dodaje submoduł w projekcie śledznym przez GIT i poniekąd je oddziela, żeby nie namieszać w tych projektach.
+
+Klonowanie repozytorium z submodułami jest podchwytliwe: wpierw klonujemy repozytorium, następnie odpalamy komendę `git submodule init`, która ściągnie inofmracje nt. submodułów, a potem `git submodule update` do pobrania zawartości.
+
+Innym sposobem jest przekazanie flagi `--recurse-submodules` do komendy `git clone`, ale grozi to ściągnięciem wszystkich submodułów (no. submoduł submodułu submodułu, rekurencja).
+
+Na skróty:
+
+`git submodule update --init` - inicjalizacja z updatem
+
+`git submodule update --init --recursive` - inic., update, rekurencyjnie.
+
+### Aktualizacja submodułu
+
+Po prostu, przechodzimy do katalogu podprojektu i robimy `git fetch` i `git merge`.
+
+Innym sposobem jest `git submodule update --remote`, to polecenie zaktualizuje wszystkie submoduły.
