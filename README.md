@@ -232,4 +232,4 @@ Na skróty:
 
 Po prostu, przechodzimy do katalogu podprojektu i robimy `git fetch` i `git merge`.
 
-Innym sposobem jest `git submodule update --remote`, to polecenie zaktualizuje wszystkie submoduły.
+Innym sposobem jest `git submodule update --remote`, to polecenie zaktualizuje wszystkie submoduły. Ewentualnie można przekazać nazwę submodułu, który chcemy zatualizować.
