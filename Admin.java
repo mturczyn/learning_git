@@ -12,6 +12,7 @@ namespace UserManagement {
 		public void createEverything() {
 			// create everything
 			String s = "hello " + "admin" + " world";
+			String helloWorld = s + "!";
 		}
 	}
 }
