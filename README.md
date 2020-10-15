@@ -183,7 +183,7 @@ Aby założyć zdalne repozytorium, wpierw należy mieć działające lokalne re
 ```
 git clone --bare C:\git_repo C:\some_safe_directory\my_remote_repo
 ```
-Od tego momentu lokalizację możemy ustawiać `C:\some_safe_directory\my_remote_repo` jako `remote` dla naszych lokalnych repozytoriów. Jeśli chcemy dane repo zdalne wynieść gdzieś na serwer, aby więcej osób mogło na nim pracować, przenosimy skopiowane zdalne repo na serwer i tam wykonujemy komendę (w utworzonej lokalizacji):
+Od tego momentu lokalizację `C:\some_safe_directory\my_remote_repo` możemy ustawiać jako `remote` dla naszych lokalnych repozytoriów. Jeśli chcemy dane repo zdalne wynieść gdzieś na serwer, aby więcej osób mogło na nim pracować, przenosimy skopiowane zdalne repo na serwer i tam wykonujemy komendę (w utworzonej lokalizacji):
 ```
 git init --bare
 ```
@@ -233,3 +233,17 @@ Na skróty:
 Po prostu, przechodzimy do katalogu podprojektu i robimy `git fetch` i `git merge`.
 
 Innym sposobem jest `git submodule update --remote`, to polecenie zaktualizuje wszystkie submoduły. Ewentualnie można przekazać nazwę submodułu, który chcemy zatualizować.
+
+### Detached HEAD
+
+Gdy tylko sobie sklonowaliśmy submoduł, jestesmy w nim w stanie "detached HEAD", czyli tak na prawdę nie jestesmy podpięci pod żaden branch, także nawet jak coś zrobimy w submodule, nasze zmiany nie maja gdzie zostać wysłane (na który branch?) i zwykły `git submodule update -remote` spowoduje utratę tych zmian.
+
+Aby zmienić ten stan, należy przełączyć się na gałąź w submodule, czyli przejść do katalogu submodułu i wykonać `git checkout master` (przykładowy branch tutaj), a potem w głownym projekcie wykonać polecenie:
+```
+git submodule update --remote --merge
+```
+Teraz możemy spokojnie pushować swoje zmiany z submoduł€.
+
+### Push zmian z submodułu
+
+Aby spushować zmiany z submodułu, należy użyć polecenia `git push --recurse-submodules=check`, gdzie `check` oznacza "sprawdź, czy wszystkie submoduły są spuchowane", jeśli nie są, to git wyświetla info o tym. Jak zastapimy `check` wartością `on-demand` wówczas git automatycznie spushuje zmiany w submodułach. Oczywiście, zmiany w submodułach już muszą być skomitowane.
