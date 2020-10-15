@@ -36,8 +36,7 @@ namespace UserManagement {
 		public Boolean doSomeWork() {
 			return false;
 		}
-		// Elaborate comment...
-		// Comment on method. Some more comment: blah blah blah.
+		
 		public Boolean beLazy() {
 			return true;
 		}
