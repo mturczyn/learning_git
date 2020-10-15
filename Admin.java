@@ -11,6 +11,7 @@ namespace UserManagement {
 		// Method used to make every thing.
 		public void createEverything() {
 			// create everything
+			String s = "hello " + "admin" + " world";
 		}
 	}
 }
