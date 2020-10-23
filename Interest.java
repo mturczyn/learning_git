@@ -14,6 +14,7 @@ namespace UserManagement {
 			return name;
 		}
 		
+		// Gets string representation of an object.
 		@Override
 		public String toString() {
 			String s = "Interest is " + name + ": " + description;
