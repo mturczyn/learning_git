@@ -9,7 +9,7 @@ namespace UserManagement {
 			this.name = name;
 			this.user = user;
 		}
-		
+		// Gets name of interest.
 		public String getName() {
 			return name;
 		}
