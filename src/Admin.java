@@ -1,4 +1,12 @@
 namespace UserManagement {
+	// This meant to cause conflicts
+	// This meant to cause conflicts
+	// This meant to cause conflicts
+	// This meant to cause conflicts
+	// This meant to cause conflicts
+	// This meant to cause conflicts
+	// This meant to cause conflicts
+	// This meant to cause conflicts
 	public class Admin : User {
 		public void doAdminStuf() {
 			// do admin stuff...
