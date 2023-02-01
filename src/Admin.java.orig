@@ -1,23 +1,9 @@
 namespace UserManagement {
 <<<<<<< HEAD
 	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
-	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
-	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
-	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
-	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
-	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
-	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
-	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
 =======
 	// This meant to cause conflicts
-	// This meant to cause conflicts
-	// This meant to cause conflicts
-	// This meant to cause conflicts
-	// This meant to cause conflicts
-	// This meant to cause conflicts
-	// This meant to cause conflicts
-	// This meant to cause conflicts
->>>>>>> 55a64b215160c43f33a370abbecc9808334dc67e
+>>>>>>> 29d7beec0212f6d30a1ad7a07b082f89e68d4f86
 	public class Admin : User {
 		public void doAdminStuf() {
 			// do admin stuff...

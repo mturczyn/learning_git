@@ -1,6 +1,6 @@
 namespace UserManagement {
-	// This meant to cause conflicts asdf asdfvscefgsegcdrgcs
 	public class Admin : User {
+		// sdafs ercfwehfnkxdhfcsjxermbfcjk
 		public void doAdminStuf() {
 			// do admin stuff...
 		}
