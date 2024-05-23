@@ -1,6 +1,7 @@
 namespace UserManagement {
 	public class Admin : User {
 		// sdafs ercfwehfnkxdhfcsjxermbfcjk
+		// haha while merging
 		public void doAdminStuf() {
 			// do admin stuff...
 		}
