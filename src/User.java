@@ -8,7 +8,6 @@ namespace UserManagement {
 			this.firstName = firstName;
 		}
 		
-		// Comment on method.
 		public int getAge() {
 			return age;
 		}
