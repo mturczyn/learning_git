@@ -6,3 +6,7 @@ Pliki z tego repozytorium są wyłącznie w celach testowych, nie stanowią żad
 
 Źródła:
 - [książka na stronie GIT](https://git-scm.com/book/en/v2/Getting-Started-Getting-Help)
+
+# Rebasing
+
+Pod [poniższym linkiem](http://git-scm.com/docs/git-rebase#_interactive_mode) jest instrukcja do rebase'owania.
