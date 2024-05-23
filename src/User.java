@@ -3,13 +3,11 @@ namespace UserManagement {
 		private String firstName;
 		private Integer age;
 		
-		// Special constructor for a class. Use at your own risk.
 		public User(String firstName, Integer age) {
 			this.age = age;
 			this.firstName = firstName;
 		}
 		
-		// Comment on method.
 		public int getAge() {
 			return age;
 		}
@@ -22,17 +20,14 @@ namespace UserManagement {
 			return "Hello my friends!";
 		}
 		
-		// Comment on method.
 		public String think() {
 			throw new Exception("Users don't think");
 		}
 		
-		// Comment on method
 		public String thinkOutOfTheBox() {
 			throw new Exception("Users don't think");
 		}
 		
-		// Comment on method
 		public Boolean doSomeWork() {
 			return false;
 		}
