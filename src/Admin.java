@@ -5,8 +5,6 @@ namespace UserManagement {
 		public void deleteEveything() {
 		}
 		public void createEverything() {
-			String s = "hello " + "admin" + " world";
-			String helloWorld = s + "!";
 		}
 	}
 }
