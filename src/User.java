@@ -29,7 +29,6 @@ namespace UserManagement {
 			throw new Exception("Users don't think");
 		}
 		
-		// Comment on method
 		public Boolean doSomeWork() {
 			return false;
 		}
