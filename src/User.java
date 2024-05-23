@@ -21,7 +21,6 @@ namespace UserManagement {
 			return "Hello my friends!";
 		}
 		
-		// Comment on method.
 		public String think() {
 			throw new Exception("Users don't think");
 		}
