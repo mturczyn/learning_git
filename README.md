@@ -9,4 +9,12 @@ Pliki z tego repozytorium są wyłącznie w celach testowych, nie stanowią żad
 
 # Rebasing
 
-Pod [poniższym linkiem](http://git-scm.com/docs/git-rebase#_interactive_mode) jest instrukcja do rebase'owania.
+[This link](http://git-scm.com/docs/git-rebase#_interactive_mode) contains rebasing manual.
+
+In order to rebase our branch and adjust commits before merging with main branch, we need to:
+
+1. Execute `git rebase -i develop` where `develop` is branch we want to merge into. This will allow us to adjust what commits we want to take/abandon/etc. FOr example we might want to squash all commits into one.
+
+2. Fill correctly the message asked by GIT.
+
+3. Force push to remote, as it must overwrite history: `git push -f`. Now our history (local and remote) should show only adjusted commits (if we wanted to squash into 1, it should show this 1 commit).
