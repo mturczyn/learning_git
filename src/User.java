@@ -24,14 +24,17 @@ namespace UserManagement {
 			throw new Exception("Users don't think");
 		}
 		
+		// comment
 		public String thinkOutOfTheBox() {
 			throw new Exception("Users don't think");
 		}
 		
+		// comment
 		public Boolean doSomeWork() {
 			return false;
 		}
 		
+		// comment
 		public Boolean beLazy() {
 			return true;
 		}
