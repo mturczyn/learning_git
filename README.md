@@ -18,3 +18,10 @@ In order to rebase our branch and adjust commits before merging with main branch
 2. Fill correctly the message asked by GIT.
 
 3. Force push to remote, as it must overwrite history: `git push -f`. Now our history (local and remote) should show only adjusted commits (if we wanted to squash into 1, it should show this 1 commit).
+
+# Default editor for GIT
+
+Sometimes, after executing GIT command that needs text input, GIT opens up default text editor to enter needed data (commit message for example). In order to switch to more convenient tool we can use command:
+```
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+```
